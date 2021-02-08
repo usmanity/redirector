@@ -7,4 +7,4 @@ This is hosted on https://r.mhmd.us
 **How to use**
 
 - Append any link to this path: `https://r.mhmd.us/?redirect=YOUR LINK HERE`. 
-- After 5 seconds, the tab will automatically close. 
+- After 5 seconds, the tab will automatically close. (This might not work if you're pasting the link yourself but when it's clicked from somewhere else, it will)

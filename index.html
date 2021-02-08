@@ -19,12 +19,27 @@
             padding: 2px;
             border-radius: 2px;
         }
+        h1 {
+            opacity: 1;
+            transition: all 1s;
+        }
+        .hidden {
+            display: none;
+        }
+        hr {
+            border-style: solid;
+            border-color: gray;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1 id="redirector">Redirector</h1>
+        <div class="hidden" id="happened">
+            <h1>✅ Redirect happened</h1>
+            <hr>
+        </div>
+        <h2 id="redirector">About this page</h1>
         <p>A simple URL redirector for easy app deep linking when link embeds don&#39;t allow non-HTTP(S) links (like
             Notion and Google Docs). Use at your own risk. </p>
         <p>This is hosted on <a href="https://r.mhmd.us">https://r.mhmd.us</a> </p>
@@ -35,6 +50,10 @@
         </ul>
     </div>
     <script>
+        function showRedirectHappening() {
+            const el = document.getElementById('happened');
+            el.classList.remove('hidden');
+        }
         const urlParams = new URLSearchParams(window.location.search);
         const redirect = urlParams.get('redirect');
         if (redirect) {
@@ -42,6 +61,7 @@
             setTimeout(() => {
                 window.close();
             }, 5000);
+            showRedirectHappening();
         } else {
             document.title = "Did not redirect"
         }

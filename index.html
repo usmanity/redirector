@@ -1,19 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
+    <style>
+        .container {
+            font-family: sans-serif;
+            width: 640px;
+            margin: auto;
+            max-width: 80%;
+            line-height: 1.6em;
+        }
+        code {
+            background-color: lightgray;
+            padding: 2px;
+            border-radius: 2px;
+        }
+    </style>
 </head>
+
 <body>
+    <div class="container">
+        <h1 id="redirector">Redirector</h1>
+        <p>A simple URL redirector for easy app deep linking when link embeds don&#39;t allow non-HTTP(S) links (like
+            Notion and Google Docs). Use at your own risk. </p>
+        <p>This is hosted on <a href="https://r.mhmd.us">https://r.mhmd.us</a> </p>
+        <p><strong>How to use</strong></p>
+        <ul>
+            <li>Append any link to this path: <code>https://r.mhmd.us/?redirect=YOUR LINK HERE</code>. </li>
+            <li>After 5 seconds, the tab will automatically close. </li>
+        </ul>
+    </div>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
-        // const myParam = urlParams.get('myParam');
-        window.location = urlParams.get('redirect')
-        setTimeout(() => {
-            window.close();
-        }, 5000);
+        const redirect = urlParams.get('redirect');
+        if (redirect) {
+            window.location = urlParams.get('redirect')
+            setTimeout(() => {
+                window.close();
+            }, 5000);
+        } else {
+            document.title = "Did not redirect"
+        }
     </script>
 </body>
+
 </html>

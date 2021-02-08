@@ -11,6 +11,9 @@
         const urlParams = new URLSearchParams(window.location.search);
         // const myParam = urlParams.get('myParam');
         window.location = urlParams.get('redirect')
+        setTimeout(() => {
+            window.close();
+        }, 5000);
     </script>
 </body>
 </html>

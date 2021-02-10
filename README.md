@@ -8,3 +8,7 @@ This is hosted on https://r.mhmd.us
 
 - Append any link to this path: `https://r.mhmd.us/?redirect=YOUR LINK HERE`. 
 - After 5 seconds, the tab will automatically close. (This might not work if you're pasting the link yourself but when it's clicked from somewhere else, it will)
+
+---
+
+Not working? File an issue as a question and I'll be happy to take a look. I did have some DNS issues in a few rare cases.

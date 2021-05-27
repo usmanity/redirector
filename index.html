@@ -57,7 +57,7 @@
             el.classList.remove('hidden');
         }
         const urlParams = new URLSearchParams(window.location.search);
-        const redirect = urlParams.get('redirect');
+        const redirect = urlParams.get('redirect') || urlParams.get('r');
         if (redirect) {
             window.location = urlParams.get('redirect')
             setTimeout(() => {

@@ -59,7 +59,7 @@
         const urlParams = new URLSearchParams(window.location.search);
         const redirect = urlParams.get('redirect') || urlParams.get('r');
         if (redirect) {
-            window.location = urlParams.get('redirect')
+            window.location = redirect;
             setTimeout(() => {
                 window.close();
             }, 5000);

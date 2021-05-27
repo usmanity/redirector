@@ -5,7 +5,7 @@ A simple URL redirector for easy app deep linking when link embeds don't allow n
 
 This is hosted on https://r.mhmd.us 
 
-**How to use**
+## Usage
 
 - Append any link to this path: `https://r.mhmd.us/?redirect=YOUR LINK HERE`. 
 - After 5 seconds, the tab will automatically close.
@@ -13,11 +13,11 @@ This is hosted on https://r.mhmd.us
 
 ---
 
-**Host it yourself**
+## Host it yourself
 Just clone the repo and throw it up on Github Pages. It's all done using JS so you don't need to run a server etc.
 
 
 ---
 
-**Getting help**
+### Getting help
 Not working? File an issue as a question and I'll be happy to take a look. I did have some DNS issues with some URLs.

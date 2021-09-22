@@ -21,3 +21,8 @@ Just clone the repo and throw it up on Github Pages. It's all done using JS so y
 
 ### Getting help
 Not working? File an issue as a question and I'll be happy to take a look. I did have some DNS issues with some URLs.
+
+
+## Project status ✓
+This project is considered "complete" meaning no new features will be added, if a major security issue is brought up, 
+that will be fixed but otherwise it is not going to be in development.

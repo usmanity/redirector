@@ -11,6 +11,17 @@ This is hosted on https://r.mhmd.us
 - After 5 seconds, the tab will automatically close.
 (This might not work if you're pasting the link yourself but when it's clicked from somewhere else, it *should*)
 
+### Use cases
+
+Redirect app scheme specific URLs from websites and apps that prohibit these. Notion and Google Docs do this, I'm sure others out there do this too. 
+
+An example would be create a new task in Things.app:
+1. Append the app scheme: `?redirect=things:///`
+2. Add the task as described within the Things docs: `?redirect=things:///add?title=get%20oat%20milk`.
+
+You can learn more about Things' URL schemes here: https://culturedcode.com/things/support/articles/2803573/
+
+
 ---
 
 ## Host it yourself

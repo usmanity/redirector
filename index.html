@@ -14,18 +14,22 @@
             max-width: 80%;
             line-height: 1.6em;
         }
+
         code {
             background-color: lightgray;
             padding: 2px;
             border-radius: 2px;
         }
+
         h1 {
             opacity: 1;
             transition: all 1s;
         }
+
         .hidden {
             display: none;
         }
+
         hr {
             border-style: solid;
             border-color: gray;
@@ -40,16 +44,29 @@
             <hr>
         </div>
         <h2 id="redirector">About this page</h1>
-        <p>A simple URL redirector for easy app deep linking when link embeds don&#39;t allow non-HTTP(S) links (like
-            Notion and Google Docs). Use at your own risk. </p>
-        <p>This is hosted on <a href="https://r.mhmd.us">https://r.mhmd.us</a> </p>
-        <p><strong>How to use</strong></p>
-        <ul>
-            <li>Append any link to this path: <code>https://r.mhmd.us/?redirect=YOUR LINK HERE</code>. </li>
-            <li>After 5 seconds, the tab will automatically close. </li>
-        </ul>
-	<hr>
-	<p><a href="https://github.com/usmanity/redirector">Github Repo</a></p>
+            <p>A simple URL redirector for easy app deep linking when link embeds don&#39;t allow non-HTTP(S) links
+                (like
+                Notion and Google Docs). Use at your own risk. </p>
+            <p>This is hosted on <a href="https://r.mhmd.us">https://r.mhmd.us</a> </p>
+            <p><strong>How to use</strong></p>
+            <ul>
+                <li>Append any link to this path: <code>https://r.mhmd.us/?redirect=YOUR LINK HERE</code>. </li>
+                <li>After 5 seconds, the tab will automatically close. </li>
+            </ul>
+            <h3 id="use-cases">Use cases</h3>
+            <p>Redirect app scheme specific URLs from websites and apps that prohibit these. Notion and Google Docs do
+                this, I&#39;m sure others out there do this too. </p>
+            <p>An example would be create a new task in Things.app:</p>
+            <ol>
+                <li>Append the app scheme: <code>?redirect=things:///</code></li>
+                <li>Add the task as described within the Things docs:
+                    <code>?redirect=things:///add?title=get%20oat%20milk</code>.</li>
+            </ol>
+            <p>You can learn more about Things&#39; URL schemes here: <a
+                    href="https://culturedcode.com/things/support/articles/2803573/">https://culturedcode.com/things/support/articles/2803573/</a>
+            </p>
+            <hr>
+            <p><a href="https://github.com/usmanity/redirector">Github Repo</a></p>
     </div>
     <script>
         function showRedirectHappening() {

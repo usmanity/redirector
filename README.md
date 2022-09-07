@@ -27,6 +27,8 @@ You can learn more about Things' URL schemes here: https://culturedcode.com/thin
 ## Host it yourself
 Just clone the repo and throw it up on Github Pages. It's all done using JS so you don't need to run a server etc.
 
+This page is purposely built to be as small as possible for quick loading, I've tried to make it under [14kb due to how TCP works](https://endtimes.dev/why-your-website-should-be-under-14kb-in-size/).
+
 
 ---
 

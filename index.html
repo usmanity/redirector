@@ -98,8 +98,12 @@
             const el = document.getElementById('happened');
             el.classList.remove('hidden');
         }
+        function getRedirect(search) {
+            const urlParams = new URLSearchParams(search);
+            return urlParams.get('r') || urlParams.get('redirect');
+        }
+        const redirect = getRedirect(window.location.search);
         const urlParams = new URLSearchParams(window.location.search);
-        const redirect = urlParams.get('redirect') || urlParams.get('r');
         const blank = urlParams.has('blank');
         if (redirect) {
             if (blank) {

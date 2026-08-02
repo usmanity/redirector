@@ -99,8 +99,12 @@
             el.classList.remove('hidden');
         }
         function getRedirect(search) {
+            const r = search.match(/(?:^|[?&])r=([\s\S]*)$/);
+            if (r) {
+                return decodeURIComponent(r[1].replace(/\+/g, ' '));
+            }
             const urlParams = new URLSearchParams(search);
-            return urlParams.get('r') || urlParams.get('redirect');
+            return urlParams.get('redirect');
         }
         const redirect = getRedirect(window.location.search);
         const urlParams = new URLSearchParams(window.location.search);
